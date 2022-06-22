@@ -24,7 +24,7 @@ $ pnpm start
 # ✨ Built in 0.75s
 ```
 
-### :tada: Open http://localhost:3000 to see the result!
+### :tada: Open http://localhost:8080 to see the result!
 
 ### ⚡ Optimizing for Production
 
@@ -47,4 +47,4 @@ $ pnpm build
 
 ## 📃 License
 
-[falcxxdev.ml](#) is Licensed Under [Apache-2.0](./LICENSE)
+[falcxxdev.ml](#) is Licensed Under [MIT](./LICENSE) License.
