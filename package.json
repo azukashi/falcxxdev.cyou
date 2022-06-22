@@ -1,0 +1,29 @@
+{
+    "name": "portfolio",
+    "version": "0.0.0",
+    "description": "My personal portfolio with vue",
+    "scripts": {
+        "start": "parcel index.html --host=0.0.0.0 --port=8080",
+        "build": "parcel build index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gifaldyazkaa/falcxxdev.ml.git"
+    },
+    "author": "Gifaldy Azka <me@falcxxdev.ml>",
+    "license": "MIT",
+    "devDependencies": {
+        "@parcel/core": "^2.6.2",
+        "@parcel/transformer-sass": "^2.6.2",
+        "@parcel/transformer-vue": "^2.6.2",
+        "parcel": "^2.6.2",
+        "typescript": "^4.7.4"
+    },
+    "dependencies": {
+        "material-icons": "^1.11.2",
+        "nprogress": "^0.2.0",
+        "vue": "^3.2.37",
+        "vue-meta": "^2.4.0",
+        "vue-router": "^4.0.16"
+    }
+}
