@@ -11,13 +11,12 @@
         </div>
         <div class="image-container">
             <div v-for="s in socials">
-                <a :href="s.url" target="_blank" class="lnk">
-                    <img class="image" :src="s.imgUrl" :alt="`Social - ${s.name}`" />
-                </a>
+                <SocialButton :name="s.name" :bg="s.bg" :color="s.color" :dest="s.url" />
             </div>
             <br />
             <div></div>
         </div>
+
         <br />
         <div id="we-hate-form-input">
             <p>
@@ -66,6 +65,8 @@
 </template>
 
 <script lang="ts">
+import SocialButton from '../components/SocialButton.vue';
+
 export default {
     data() {
         return {
@@ -75,32 +76,38 @@ export default {
                 {
                     name: 'GitHub',
                     url: 'https://github.com/gifaldyazkaa',
-                    imgUrl: 'https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white',
+                    bg: '#181717',
+                    color: '#fff',
                 },
                 {
                     name: 'Discord',
                     url: 'https://discord.com/users/788260234409672754',
-                    imgUrl: 'https://img.shields.io/badge/-Discord-%235865F2?style=for-the-badge&logo=discord&logoColor=white',
+                    bg: '#5865F2',
+                    color: '#fff',
                 },
                 {
                     name: 'Facebook',
                     url: 'https://facebook.com/falcxxdev',
-                    imgUrl: 'https://img.shields.io/badge/-Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white',
+                    bg: '#1877F2',
+                    color: '#fff',
                 },
                 {
                     name: 'Instagram',
                     url: 'https://instagram.com/falcxxdev',
-                    imgUrl: 'https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white',
+                    bg: '#E4405F',
+                    color: '#fff',
                 },
                 {
                     name: 'Twitter',
                     url: 'https://twitter.com/falcxxdev',
-                    imgUrl: 'https://img.shields.io/badge/-Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white',
+                    bg: '#1DA1F2',
+                    color: '#fff',
                 },
                 {
                     name: 'XDA Developers',
                     url: 'https://forum.xda-developers.com/m/falcxxdev.11950709/',
-                    imgUrl: 'https://img.shields.io/badge/-XDA%20Developers-%23EA7100?style=for-the-badge&logo=xda-developers&logoColor=white',
+                    bg: '#EA7100',
+                    color: '#fff',
                 },
             ],
             games: [
@@ -123,6 +130,7 @@ export default {
             ],
         };
     },
+    components: { SocialButton },
 };
 </script>
 
@@ -144,15 +152,6 @@ img {
 }
 .description p {
     margin-top: 15px;
-}
-.image-container {
-    img {
-        margin-top: 10px;
-        margin-right: 5px;
-        float: left;
-        position: relative;
-        border-radius: 1vh;
-    }
 }
 #we-hate-form-input p {
     margin-top: 10px;
