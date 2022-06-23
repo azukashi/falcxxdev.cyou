@@ -5,7 +5,7 @@
 
 ### 🛠️ Requirements
 
-A node.js >= 16.12.0 with [pnpm](https://pnpm.io) is recommended.
+A [node.js](https://nodejs.org) >= 16.12.0 setup with [pnpm](https://pnpm.io) is recommended.
 
 ### 📦 Install dependencies
 
@@ -30,7 +30,6 @@ $ pnpm start
 ### ⚡ Optimizing for Production
 
 ```sh
-# Build
 $ pnpm build
 #
 # > portfolio@x.x.x build /home/git/portfolio
@@ -41,11 +40,11 @@ $ pnpm build
 # dist/index.html                                     848 B    0.20s
 # dist/favicon.[hash].png                         116.18 KB    0.05s
 # dist/index.[hash].css                             6.81 KB    0.05s
-# dist/material-icons-outlined.[hash].woff2      151.64 KB     0.05s
-# dist/material-icons-outlined.[hash].woff       177.99 KB     0.05s
+# dist/material-icons-outlined.[hash].woff2       151.64 KB    0.05s
+# dist/material-icons-outlined.[hash].woff        177.99 KB    0.05s
 # dist/index.[hash].js                            129.77 KB    0.05s
 ```
 
 ## 📃 License
 
-[falcxxdev.ml](#) is Licensed Under [MIT](./LICENSE) License.
+[falcxxdev.ml](#) is Licensed Under [MIT License](./LICENSE).
