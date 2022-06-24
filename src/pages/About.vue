@@ -83,6 +83,7 @@
             <details>
                 <summary title="Really want to see the image? 🤨">Show image</summary>
                 <img class="req-img" src="https://cdn.upload.systems/uploads/DJdc0aMs.png" alt="Request message" />
+                <img src="https://cdn.upload.systems/uploads/TQx8WOf7.png" alt="Request message 2" class="req-img" />
             </details>
         </div>
     </section>
