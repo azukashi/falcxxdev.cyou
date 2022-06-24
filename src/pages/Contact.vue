@@ -39,12 +39,15 @@
             <h2 id="game-title">Play with me</h2>
             <div class="image-container">
                 <div v-for="g in games">
-                    <img id="game-badge" class="image" :src="g.imgUrl" :alt="g.name" />
+                    <ul>
+                        <li class="list">
+                            <strong>{{ g.name }}</strong> - UID: <code>{{ g.id }}</code
+                            >. {{ g.more }}
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <br />
-        <br />
         <div id="credits">
             <h2 id="credits-title">Credits</h2>
             <p id="desc">
@@ -53,9 +56,9 @@
             </p>
             <div id="list" v-for="c in credits">
                 <ul>
-                    <li>
+                    <li class="list">
                         {{ c.type }} is drawn by
-                        <a :href="`https://twitter.com/${username}`">{{ c.artist }}</a>
+                        <a :href="`https://twitter.com/${c.username}`">{{ c.artist }}</a>
                         | <a :href="c.tweets">See tweet</a>
                     </li>
                 </ul>
@@ -113,7 +116,8 @@ export default {
             games: [
                 {
                     name: 'Azur Lane',
-                    imgUrl: 'https://img.shields.io/badge/Azur%20Lane-72493403%20(EN%20Avrora)-%233399ff?logo=codeship&style=for-the-badge',
+                    id: '72493403',
+                    more: 'EN - Avrora server',
                 },
             ],
             discordCard: {
@@ -153,6 +157,14 @@ img {
 .description p {
     margin-top: 15px;
 }
+li {
+    &.list {
+        font-family: $lexend;
+        list-style: disc;
+        margin-left: 18px;
+        cursor: default;
+    }
+}
 #we-hate-form-input p {
     margin-top: 10px;
     font-size: 12px;
@@ -165,12 +177,6 @@ img {
     color: var(--title-color);
 }
 #credits {
-    li {
-        font-family: $lexend;
-        list-style: disc;
-        margin-left: 18px;
-        cursor: default;
-    }
     #desc {
         margin-top: 3px;
         margin-bottom: 5px;
@@ -187,5 +193,7 @@ img {
 }
 #game-badge {
     margin-right: 3px;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 </style>
