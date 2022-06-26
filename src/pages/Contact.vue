@@ -6,7 +6,8 @@
         </div>
         <div class="description">
             <p>
-                You can reach me out via email at <a :href="`mailto:${email}`">{{ email }}</a> or via socials below :
+                You can reach me out via email at <a :href="`mailto:${myself.email}`">{{ myself.email }}</a> or via
+                socials below :
             </p>
         </div>
         <div class="image-container">
@@ -69,69 +70,20 @@
 
 <script lang="ts">
 import SocialButton from '../components/SocialButton.vue';
+import myself from '../data/self';
+import socials from '../data/socials';
+import games from '../data/games';
+import discordCard from '../data/discordCard';
+import credits from '../data/credits';
 
 export default {
     data() {
         return {
-            name: 'Gifaldy',
-            email: 'me@falcxxdev.ml',
-            socials: [
-                {
-                    name: 'GitHub',
-                    url: 'https://github.com/gifaldyazkaa',
-                    bg: '#181717',
-                    color: '#fff',
-                },
-                {
-                    name: 'Discord',
-                    url: 'https://discord.com/users/788260234409672754',
-                    bg: '#5865F2',
-                    color: '#fff',
-                },
-                {
-                    name: 'Facebook',
-                    url: 'https://facebook.com/falcxxdev',
-                    bg: '#1877F2',
-                    color: '#fff',
-                },
-                {
-                    name: 'Instagram',
-                    url: 'https://instagram.com/falcxxdev',
-                    bg: '#E4405F',
-                    color: '#fff',
-                },
-                {
-                    name: 'Twitter',
-                    url: 'https://twitter.com/falcxxdev',
-                    bg: '#1DA1F2',
-                    color: '#fff',
-                },
-                {
-                    name: 'XDA Developers',
-                    url: 'https://forum.xda-developers.com/m/falcxxdev.11950709/',
-                    bg: '#EA7100',
-                    color: '#fff',
-                },
-            ],
-            games: [
-                {
-                    name: 'Azur Lane',
-                    id: '72493403',
-                    more: 'EN - Avrora server',
-                },
-            ],
-            discordCard: {
-                userId: '788260234409672754',
-                altText: 'Discord Card',
-            },
-            credits: [
-                {
-                    type: 'Both My Profile Picture and Website Favicon',
-                    artist: 'ゆさゆさ (@yusa_39)',
-                    username: 'yusa_39',
-                    tweets: 'https://twitter.com/yusa_39/status/1490259792086335490',
-                },
-            ],
+            myself,
+            socials,
+            games,
+            discordCard,
+            credits,
         };
     },
     components: { SocialButton },
