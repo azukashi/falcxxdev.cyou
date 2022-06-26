@@ -13,7 +13,7 @@
             </mask>
         </defs>
 
-        <image :xlink:href="avatarUrl" x="0" y="0" width="100%" height="100%" mask="url(#mask)" />
+        <image :xlink:href="myself.avatarUrl" x="0" y="0" width="100%" height="100%" mask="url(#mask)" />
 
         <g class="border">
             <circle
@@ -68,10 +68,11 @@
 </template>
 
 <script lang="ts">
+import myself from '../data/self';
 export default {
     data() {
         return {
-            avatarUrl: 'https://avatars.githubusercontent.com/u/68645946',
+            myself,
         };
     },
 };

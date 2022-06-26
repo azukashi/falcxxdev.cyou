@@ -7,9 +7,9 @@
         </div>
         <div id="paragraph">
             <p>
-                Hello, my name is <strong>{{ fullName }}</strong
+                Hello, my name is <strong>{{ myself.fullName }}</strong
                 >. Usually called <strong>Gifaldy / Azka / Falcxxdev (at the internet)</strong>. Born and live in
-                <a href="https://www.bandung.go.id/">{{ bornLive }}</a
+                <a href="https://www.bandung.go.id/">{{ myself.born_and_live_at }}</a
                 >.
             </p>
             <br />
@@ -91,68 +91,15 @@
 
 <script lang="ts">
 import Profile from '../components/Profile.vue';
+import myself from '../data/self';
+import skills from '../data/skills';
+import waifus from '../data/waifus';
 export default {
     data() {
         return {
-            fullName: 'Gifaldy Azka',
-            bornLive: 'Bandung, West Java, Indonesia',
-            skills: {
-                langSkills: [
-                    { name: 'C++' },
-                    { name: 'Shell Script' },
-                    { name: 'JavaScript' },
-                    { name: 'TypeScript' },
-                    { name: 'YAML' },
-                ],
-                frontEndSkills: [
-                    { name: 'HTML' },
-                    { name: 'CSS' },
-                    { name: 'SASS' },
-                    { name: 'SvelteKit' },
-                    { name: 'Vue.js' },
-                    { name: 'Bootstrap' },
-                ],
-                backEndSkills: [{ name: 'Node.js' }, { name: 'MySQL' }, { name: 'MongoDB' }],
-                toolsSkills: [{ name: 'Git' }, { name: 'Vim & Neovim' }, { name: 'Visual Studio Code' }],
-            },
-            waifus: [
-                {
-                    name: {
-                        jp: '常闇トワ',
-                        en: 'Tokoyami Towa',
-                    },
-                    from: 'hololive',
-                    link: 'https://twitter.com/tokoyamitowa',
-                    fromLink: 'https://hololive.tv',
-                },
-                {
-                    name: {
-                        jp: '湊あくあ',
-                        en: 'Minato Aqua',
-                    },
-                    from: 'hololive',
-                    link: 'https://twitter.com/minatoaqua',
-                    fromLink: 'https://hololive.tv',
-                },
-                {
-                    name: {
-                        jp: 'ゼータ',
-                        en: 'Vestia Zeta',
-                    },
-                    from: 'hololiveID',
-                    link: 'https://twitter.com/vestiazeta',
-                    fromLink: 'https://hololive.tv/id',
-                },
-                {
-                    name: {
-                        jp: '壱百満天原サロメ',
-                        en: 'Hyakumantenbara Salome',
-                    },
-                    from: 'Nijisanji',
-                    link: 'https://twitter.com/1000000lome',
-                    fromLink: 'https://nijisanji.jp/',
-                },
-            ],
+            myself,
+            skills,
+            waifus,
         };
     },
     components: { Profile },
