@@ -1,4 +1,11 @@
-const socials = [
+type Socials = {
+    name: string;
+    url: string;
+    bg: string;
+    color: string;
+}[];
+
+const socials: Socials = [
     {
         name: 'GitHub',
         url: 'https://github.com/gifaldyazkaa',

@@ -1,4 +1,11 @@
-const credits = [
+type Credits = {
+    type: string;
+    artist: string;
+    username: string;
+    tweets: string;
+}[];
+
+const credits: Credits = [
     {
         type: 'Both My Profile Picture and Website Favicon',
         artist: 'ゆさゆさ (@yusa_39)',

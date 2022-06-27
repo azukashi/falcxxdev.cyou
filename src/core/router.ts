@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, Router } from 'vue-router';
 import NProgress from 'nprogress';
+import './routes.d';
 
 import Home from '../pages/Home.vue';
 import About from '../pages/About.vue';
@@ -7,7 +8,7 @@ import Projects from '../pages/Projects.vue';
 import Contact from '../pages/Contact.vue';
 import NotFound from '../pages/NotFound.vue';
 
-const routes = [
+const routes: Routes = [
     {
         path: '/',
         name: 'Home',

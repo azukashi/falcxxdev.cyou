@@ -1,4 +1,13 @@
-const projects = [
+type Projects = {
+    name: string;
+    description: string;
+    repo_name: string;
+    demo_url: string;
+    img_preview: string;
+    emoji: string;
+}[];
+
+const projects: Projects = [
     {
         name: '湊あくあ Fanpage',
         description: '湊あくあ Fanpage created with Svelte and Sveltestrap.',

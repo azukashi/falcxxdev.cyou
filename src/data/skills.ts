@@ -1,4 +1,11 @@
-const skills = {
+type Skills = {
+    langSkills: { name: string }[];
+    frontEndSkills: { name: string }[];
+    backEndSkills: { name: string }[];
+    toolsSkills: { name: string }[];
+};
+
+const skills: Skills = {
     langSkills: [
         { name: 'C++' },
         { name: 'Shell Script' },
