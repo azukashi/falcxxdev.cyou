@@ -1,4 +1,11 @@
-const waifus = [
+type Waifus = {
+    name: { jp: string; en: string };
+    from: string;
+    link: string;
+    fromLink: string;
+}[];
+
+const waifus: Waifus = [
     {
         name: {
             jp: '常闇トワ',
