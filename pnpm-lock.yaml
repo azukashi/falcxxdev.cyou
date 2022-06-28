@@ -1,18 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@parcel/core': ^2.6.2
-  '@parcel/transformer-sass': ^2.6.2
-  '@parcel/transformer-vue': ^2.6.2
-  material-icons: ^1.11.2
-  nprogress: ^0.2.0
-  parcel: ^2.6.2
-  typescript: ^4.7.4
-  vue: ^3.2.37
-  vue-router: ^4.0.16
+  '@parcel/core': 2.6.2
+  '@parcel/transformer-sass': 2.6.2
+  '@parcel/transformer-vue': 2.6.2
+  material-icons: 1.11.3
+  nprogress: 0.2.0
+  parcel: 2.6.2
+  typescript: 4.7.4
+  vue: 3.2.37
+  vue-router: 4.0.16
 
 dependencies:
-  material-icons: 1.11.2
+  material-icons: 1.11.3
   nprogress: 0.2.0
   vue: 3.2.37
   vue-router: 4.0.16_vue@3.2.37
@@ -1745,8 +1745,8 @@ packages:
     dependencies:
       sourcemap-codec: 1.4.8
 
-  /material-icons/1.11.2:
-    resolution: {integrity: sha512-maKSVQNQEHrHXjKTPTwH0141hR2bC8fFUaX4bJzzwVRs7jY+9A+jx0kH/lpgEGIPoYR8gho4iLDvWN3mBRL53A==}
+  /material-icons/1.11.3:
+    resolution: {integrity: sha512-pGkZ5LJOLH/R3jlqL2HXGVi36cucTn/RxSkPtqsinxB2xoDE0fZStwAUZlMKcW0z4qqDamBwVvzM1IVQe6OQDw==}
     dev: false
 
   /mdn-data/2.0.14:
