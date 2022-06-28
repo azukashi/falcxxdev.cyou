@@ -19,6 +19,10 @@
         {
             "source": "/view-source",
             "destination": "https://github.com/gifaldyazkaa/falcxxdev.ml"
+        },
+        {
+            "source": "/sitemap",
+            "destination": "./sitemap.xml"
         }
     ]
 }
