@@ -19,9 +19,8 @@
             </p>
             <br />
             <p>
-                Having weird obsession with ships & virtual youtuber. I don't know why but the fact is i've been setted
-                a ship to be my permanent waifu. Jump to
-                <a href="#waifus">Current waifu</a> and see it.
+                Having weird obsession with virtual youtubers. Often likes almost all of their posts on twitter and has
+                a desire to join the virtual youtuber's fan server (on Discord) if it exists.
             </p>
         </div>
         <div id="skills">

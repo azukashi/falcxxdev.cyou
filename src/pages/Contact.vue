@@ -41,7 +41,7 @@
             <div class="image-container">
                 <div v-for="g in games">
                     <ul>
-                        <li class="list">
+                        <li class="list game-badge">
                             <strong>{{ g.name }}</strong> - UID: <code>{{ g.id }}</code
                             >. {{ g.more }}
                         </li>
@@ -143,7 +143,7 @@ li {
 #discord-card {
     margin-top: 9px;
 }
-#game-badge {
+.game-badge {
     margin-right: 3px;
     margin-top: 5px;
     margin-right: 5px;
