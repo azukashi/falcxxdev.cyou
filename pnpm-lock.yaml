@@ -9,13 +9,13 @@ specifiers:
   parcel: 2.6.2
   typescript: 4.7.4
   vue: 3.2.37
-  vue-router: 4.0.16
+  vue-router: 4.1.1
 
 dependencies:
   material-icons: 1.11.4
   nprogress: 0.2.0
   vue: 3.2.37
-  vue-router: 4.0.16_vue@3.2.37
+  vue-router: 4.1.1_vue@3.2.37
 
 devDependencies:
   '@parcel/core': 2.6.2
@@ -2094,8 +2094,8 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /vue-router/4.0.16_vue@3.2.37:
-    resolution: {integrity: sha512-JcO7cb8QJLBWE+DfxGUL3xUDOae/8nhM1KVdnudadTAORbuxIC/xAydC5Zr/VLHUDQi1ppuTF5/rjBGzgzrJNA==}
+  /vue-router/4.1.1_vue@3.2.37:
+    resolution: {integrity: sha512-Wp1mEf2xCwT0ez7o9JvgpfBp9JGnVb+dPERzXDbugTatzJAJ60VWOhJKifQty85k+jOreoFHER4r5fu062PhPw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
