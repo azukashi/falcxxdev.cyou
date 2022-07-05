@@ -1,8 +1,8 @@
 type Waifus = {
     name: { jp: string; en: string };
-    from: string;
+    from?: string;
     link: string;
-    fromLink: string;
+    fromLink?: string;
 }[];
 
 const waifus: Waifus = [
