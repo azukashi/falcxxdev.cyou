@@ -1,11 +1,17 @@
 type Waifus = {
-    name: { jp: string; en: string };
+    name: { jp?: string; en: string };
     from?: string;
     link: string;
     fromLink?: string;
 }[];
 
 const waifus: Waifus = [
+    {
+        name: {
+            en: 'Evelyn (Indie VTuber)',
+        },
+        link: 'https://twitter.com/EpelEvelyn',
+    },
     {
         name: {
             jp: '常闇トワ',
@@ -23,15 +29,6 @@ const waifus: Waifus = [
         from: 'hololive',
         link: 'https://twitter.com/minatoaqua',
         fromLink: 'https://hololive.tv',
-    },
-    {
-        name: {
-            jp: 'ゼータ',
-            en: 'Vestia Zeta',
-        },
-        from: 'hololiveID',
-        link: 'https://twitter.com/vestiazeta',
-        fromLink: 'https://hololive.tv/id',
     },
     {
         name: {
