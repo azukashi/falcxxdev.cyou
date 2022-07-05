@@ -69,7 +69,10 @@
             <ul>
                 <div v-for="wf in waifus">
                     <li>
-                        <a :href="wf.link" target="_blank">{{ wf.name.jp }} ／ {{ wf.name.en }}</a>
+                        <a :href="wf.link" target="_blank">
+                            <template v-if="wf.name.jp"> {{ wf.name.jp }} ／ </template>
+                            {{ wf.name.en }}</a
+                        >
                         <template v-if="wf.from">
                             from
                             <a :href="wf.fromLink" target="_blank">{{ wf.from }}</a>
