@@ -18,9 +18,6 @@ $ pnpm install
 ```sh
 $ pnpm start
 #
-# > portfolio@x.x.x start /home/git/portfolio
-# > parcel index.html --host=0.0.0.0 --port=8080
-#
 # Server running at http://[hostname]:8080
 # ✨ Built in 0.75s
 ```
@@ -31,9 +28,6 @@ $ pnpm start
 
 ```sh
 $ pnpm build
-#
-# > portfolio@x.x.x build /home/git/portfolio
-# > parcel build index.html
 #
 # ✨ Built in 450ms
 #
