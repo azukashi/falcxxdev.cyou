@@ -21,24 +21,6 @@ const waifus: Waifus = [
         link: 'https://twitter.com/tokoyamitowa',
         fromLink: 'https://hololive.tv',
     },
-    {
-        name: {
-            jp: '湊あくあ',
-            en: 'Minato Aqua',
-        },
-        from: 'hololive',
-        link: 'https://twitter.com/minatoaqua',
-        fromLink: 'https://hololive.tv',
-    },
-    {
-        name: {
-            jp: '壱百満天原サロメ',
-            en: 'Hyakumantenbara Salome',
-        },
-        from: 'Nijisanji',
-        link: 'https://twitter.com/1000000lome',
-        fromLink: 'https://nijisanji.jp/',
-    },
 ];
 
 export default waifus;
