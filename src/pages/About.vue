@@ -80,15 +80,6 @@
                     </li>
                 </div>
             </ul>
-            <p id="info">
-                4 waifus?! yea. i was requested to have 4 waifus in one time. Here is the message. If you don't
-                understand what it means, just ignore this.
-            </p>
-            <details>
-                <summary title="Really want to see the image? 🤨">Show image</summary>
-                <img class="req-img" src="https://cdn.upload.systems/uploads/DJdc0aMs.png" alt="Request message" />
-                <img src="https://cdn.upload.systems/uploads/TQx8WOf7.png" alt="Request message 2" class="req-img" />
-            </details>
         </div>
     </section>
 </template>
