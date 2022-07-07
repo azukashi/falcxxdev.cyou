@@ -21,8 +21,8 @@ const skills: Skills = {
         { name: 'Vue.js' },
         { name: 'Bootstrap' },
     ],
-    backEndSkills: [{ name: 'Node.js' }, { name: 'MySQL' }, { name: 'MongoDB' }],
-    toolsSkills: [{ name: 'Git' }, { name: 'Vim & Neovim' }, { name: 'Visual Studio Code' }],
+    backEndSkills: [{ name: 'Node.js' }, { name: 'MySQL' }, { name: 'MongoDB' }, { name: 'PHP' }],
+    toolsSkills: [{ name: 'Figma' }, { name: 'Git' }, { name: 'Vim & Neovim' }, { name: 'Visual Studio Code' }],
 };
 
 export default skills;
