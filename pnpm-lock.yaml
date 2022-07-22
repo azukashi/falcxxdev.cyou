@@ -4,7 +4,7 @@ specifiers:
   '@parcel/core': 2.6.2
   '@parcel/transformer-sass': 2.6.2
   '@parcel/transformer-vue': 2.6.2
-  material-icons: 1.11.5
+  material-icons: 1.11.7
   nprogress: 0.2.0
   parcel: 2.6.2
   typescript: 4.7.4
@@ -12,7 +12,7 @@ specifiers:
   vue-router: 4.1.2
 
 dependencies:
-  material-icons: 1.11.5
+  material-icons: 1.11.7
   nprogress: 0.2.0
   vue: 3.2.37
   vue-router: 4.1.2_vue@3.2.37
@@ -1745,8 +1745,8 @@ packages:
     dependencies:
       sourcemap-codec: 1.4.8
 
-  /material-icons/1.11.5:
-    resolution: {integrity: sha512-JTf+IwOcKV6Y6JhUBqAnRKHgQFGROtoewHKwORscI2xLK9R3rJOTzzLZwxFgsa7SRfB2geghgfOD6DuVnQLx6A==}
+  /material-icons/1.11.7:
+    resolution: {integrity: sha512-M/cp6HvT9IWNKffU4NZ41+DQe5d9O1rxfBn5/hYf12RxLC09khMDWruDHOCzLbAub7SgNrAmxVNDpEmubxHUbg==}
     dev: false
 
   /mdn-data/2.0.14:
