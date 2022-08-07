@@ -25,20 +25,20 @@ const projects: Projects = [
         emoji: '🤖',
     },
     {
-        name: 'Zeta',
-        description: 'Helper Discord Bot for My Private Discord Server',
-        repo_name: 'zeta',
-        demo_url: 'https://zetaa.gq/',
-        img_preview: 'https://i.upload.systems/64lMDjGm',
-        emoji: '📜',
-    },
-    {
         name: 'Wangy wangy',
         description: 'Generator Tools that created for fun and designed for weebs',
         repo_name: 'wagny-wangy',
         demo_url: 'https://wangy.falcxxdev.ml',
         img_preview: 'https://i.upload.systems/1pukVaLj',
         emoji: '🌸',
+    },
+    {
+        name: 'Evelyn',
+        description: 'Fan-made SPA website for Evelyn Vtuber (Hai Halo Epel)',
+        repo_name: 'evelyn',
+        demo_url: 'https://evelyn.falcxxdev.ml',
+        img_preview: 'https://cdn.upload.systems/uploads/Ywjqv0Cp.png',
+        emoji: '🍎',
     },
 ];
 

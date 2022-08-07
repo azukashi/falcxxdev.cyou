@@ -5,22 +5,6 @@ type Waifus = {
     fromLink?: string;
 }[];
 
-const waifus: Waifus = [
-    {
-        name: {
-            en: 'Evelyn (Indie VTuber)',
-        },
-        link: 'https://twitter.com/EpelEvelyn',
-    },
-    {
-        name: {
-            jp: '常闇トワ',
-            en: 'Tokoyami Towa',
-        },
-        from: 'hololive',
-        link: 'https://twitter.com/tokoyamitowa',
-        fromLink: 'https://hololive.tv',
-    },
-];
+const waifus = null;
 
 export default waifus;
