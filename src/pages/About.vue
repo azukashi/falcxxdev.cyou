@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div id="waifus">
+        <div id="waifus" v-if="waifus">
             <h2 class="pb">Current waifus</h2>
             <p class="pb">
                 Beloved characters that i am very
