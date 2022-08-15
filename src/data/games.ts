@@ -6,9 +6,9 @@ type Games = {
 
 const games: Games = [
     {
-        name: 'Azur Lane',
-        id: '72493403',
-        more: 'EN - Avrora server',
+        name: 'Tower of Fantasy',
+        id: '1600758414',
+        more: 'SEA - Chandra server',
     },
 ];
 
