@@ -22,7 +22,15 @@ const skills: Skills = {
         { name: 'Bootstrap' },
     ],
     backEndSkills: [{ name: 'Node.js' }, { name: 'MySQL' }, { name: 'MongoDB' }, { name: 'PHP' }],
-    toolsSkills: [{ name: 'Figma' }, { name: 'Git' }, { name: 'Vim & Neovim' }, { name: 'Visual Studio Code' }],
+    toolsSkills: [
+        { name: 'Discord.js' },
+        { name: 'Figma' },
+        { name: 'Git' },
+        { name: 'Husky' },
+        { name: 'Parcel' },
+        { name: 'Vim & Neovim' },
+        { name: 'Visual Studio Code' },
+    ],
 };
 
 export default skills;
