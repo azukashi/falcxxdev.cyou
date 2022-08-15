@@ -129,13 +129,15 @@ details {
     padding-bottom: 20px;
     li {
         font-family: $lexend;
-        list-style: disc;
         margin-left: 18px;
         cursor: default;
+        list-style: disc;
     }
 }
-#waifus {
+#skills {
     padding-bottom: 90px;
+}
+#waifus {
     li {
         font-family: $lexend;
         list-style: disc;
