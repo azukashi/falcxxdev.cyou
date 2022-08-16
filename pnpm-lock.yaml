@@ -4,7 +4,7 @@ specifiers:
   '@parcel/core': 2.7.0
   '@parcel/transformer-sass': 2.7.0
   '@parcel/transformer-vue': 2.7.0
-  husky: ^8.0.1
+  husky: 8.0.1
   material-icons: 1.11.10
   nprogress: 0.2.0
   parcel: 2.7.0
