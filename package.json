@@ -4,7 +4,7 @@
     "description": "My personal portfolio with vue",
     "scripts": {
         "start": "parcel index.html --host=0.0.0.0 --port=8080",
-        "build": "parcel build index.html && cp src/sitemap.xml dist/ && cp src/robots.txt dist/"
+        "build": "parcel build index.html && cp src/seo/* dist/"
     },
     "repository": {
         "type": "git",
