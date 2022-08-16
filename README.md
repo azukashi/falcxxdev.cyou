@@ -5,7 +5,7 @@
 
 ### 🛠️ Requirements
 
-A [node.js](https://nodejs.org) >= 16.12.0 setup with [pnpm](https://pnpm.io) is recommended.
+A [node.js](https://nodejs.org) >= 12.16.2 setup with [pnpm](https://pnpm.io) is recommended.
 
 ### 📦 Install dependencies
 
@@ -18,8 +18,7 @@ $ pnpm install
 ```sh
 $ pnpm start
 #
-# Server running at http://[hostname]:8080
-# ✨ Built in 0.75s
+# ✨ Built in 450ms
 ```
 
 ### :tada: Open http://localhost:8080 to see the result!
@@ -30,15 +29,8 @@ $ pnpm start
 $ pnpm build
 #
 # ✨ Built in 450ms
-#
-# dist/index.html                                     848 B    0.20s
-# dist/favicon.[hash].png                         116.18 KB    0.05s
-# dist/index.[hash].css                             6.81 KB    0.05s
-# dist/material-icons-outlined.[hash].woff2       151.64 KB    0.05s
-# dist/material-icons-outlined.[hash].woff        177.99 KB    0.05s
-# dist/index.[hash].js                            129.77 KB    0.05s
 ```
 
 ## 📃 License
 
-[falcxxdev.ml](#) is Licensed Under [MIT License](./LICENSE).
+[falcxxdev.ml](https://www.falcxxdev.ml) is Licensed Under [MIT License](./LICENSE).
