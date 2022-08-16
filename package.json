@@ -3,8 +3,11 @@
     "version": "0.3.0",
     "description": "My personal portfolio with vue",
     "scripts": {
-        "start": "parcel src/index.html --host=0.0.0.0 --port=8080",
-        "build": "parcel build src/index.html && cp src/seo/* dist/"
+        "dev": "parcel src/index.html --host=0.0.0.0 --port=8080",
+        "generate": "parcel build src/index.html && cp src/seo/* dist/",
+        "preview": "serve -sp 8080 dist",
+        "lint": "prettier -c .",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -16,7 +19,10 @@
         "@parcel/core": "2.7.0",
         "@parcel/transformer-sass": "2.7.0",
         "@parcel/transformer-vue": "2.7.0",
+        "husky": "^8.0.1",
         "parcel": "2.7.0",
+        "prettier": "2.7.1",
+        "serve": "14.0.1",
         "typescript": "4.7.4"
     },
     "dependencies": {
