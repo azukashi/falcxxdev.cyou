@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 
-import '../index.d';
+import './types/vue.d';
 import App from './App.vue';
 import router from './core/router';
 

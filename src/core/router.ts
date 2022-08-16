@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, Router } from 'vue-router';
 import NProgress from 'nprogress';
-import './routes.d';
+import { Routes } from '../types/routes';
 
 import Home from '../pages/Home.vue';
 import About from '../pages/About.vue';
