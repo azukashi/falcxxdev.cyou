@@ -23,8 +23,10 @@ export default {
 
 <style lang="scss">
 @import '../styles/variable';
+@import '../styles/mixin';
+
 // Main section
-.greeting {
+.greeting__text {
     font-family: $lexend;
     font-size: 1.6rem;
     text-align: center;
@@ -34,12 +36,10 @@ export default {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    &__text {
-        font-weight: 500;
-        p {
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
+    font-weight: 500;
+    p {
+        font-weight: 600;
+        font-size: 1.5rem;
     }
     .separator {
         opacity: 0.6;
@@ -48,6 +48,14 @@ export default {
         margin-bottom: 1rem;
         max-width: 16rem;
         text-align: center;
+    }
+    @include on-mobile {
+        width: 100%;
+        font-size: 1.1rem;
+        p {
+            font-weight: 600;
+            font-size: 1rem;
+        }
     }
 }
 </style>
