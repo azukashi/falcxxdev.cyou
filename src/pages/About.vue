@@ -23,6 +23,7 @@
                 a desire to join the virtual youtuber's fan server (on Discord) if it exists.
             </p>
         </div>
+        <hr />
         <div id="skills">
             <h2 class="pb">Skills</h2>
             <div class="grid-container">
@@ -113,6 +114,11 @@ p {
 }
 details {
     cursor: pointer;
+}
+hr {
+    opacity: 0.6;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 // Main section
 #image-container {
