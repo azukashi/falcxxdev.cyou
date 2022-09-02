@@ -84,13 +84,13 @@ export default {
     width: 11rem;
     text-align: center;
 }
-.border {
-    transform-origin: 125px 125px;
-    -webkit-transition: -webkit-transform 0.75s ease-in-out;
-    transition: transform 0.75s ease-in-out;
-    &:hover {
-        -webkit-transform: rotate(720deg);
-        transform: rotate(720deg);
-    }
-}
+// .border {
+//     transform-origin: 125px 125px;
+//     -webkit-transition: -webkit-transform 0.75s ease-in-out;
+//     transition: transform 0.75s ease-in-out;
+//     &:hover {
+//         -webkit-transform: rotate(720deg);
+//         transform: rotate(720deg);
+//     }
+// }
 </style>
