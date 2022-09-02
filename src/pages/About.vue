@@ -7,7 +7,7 @@
         </div>
         <div id="paragraph">
             <p>
-                Hello, my name is <strong>{{ myself.fullName }}</strong
+                Hello, my name is <strong>{{ myself.name }}</strong
                 >. Usually called <strong>Gifaldy / Azka / Falcxxdev (at the internet)</strong>. Born and live in
                 <a href="https://www.bandung.go.id/">{{ myself.born_and_live_at }}</a
                 >.
