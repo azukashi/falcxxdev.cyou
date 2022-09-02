@@ -15,7 +15,6 @@
                 <SocialButton :name="s.name" :bg="s.bg" :color="s.color" :dest="s.url" />
             </div>
             <br />
-            <div></div>
         </div>
 
         <br />
