@@ -1,5 +1,5 @@
 <template>
-    <Header />
+    <Header @modeState="handleMode" />
     <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
             <component :is="Component"></component>
@@ -13,6 +13,22 @@ import 'material-icons/iconfont/outlined.css';
 export default {
     name: 'App',
     components: { Header },
+    beforeMount() {
+        if (this.dark) document.body.classList.add('dark');
+        if (!this.dark) document.body.classList.remove('dark');
+    },
+    data() {
+        return {
+            dark: true,
+        };
+    },
+    methods: {
+        handleMode(state) {
+            this.dark = state;
+            if (this.dark) document.body.classList.add('dark');
+            if (!this.dark) document.body.classList.remove('dark');
+        },
+    },
 };
 </script>
 
