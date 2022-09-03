@@ -31,6 +31,7 @@ body {
     background-color: $body-color;
     color: $text-color;
     scroll-behavior: smooth;
+    transition: 0.1s;
 }
 
 ul {
@@ -38,12 +39,39 @@ ul {
 }
 
 a {
+    color: $first-color-alt;
     text-decoration: none;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+// Dark mode
+body.dark {
+    font-size: $normal-font-size;
+    background-color: $dark-bg;
+    color: $dark-text;
+    .header,
+    .nav__menu {
+        background-color: $dark-bg-alt;
+        .nav__logo {
+            color: $dark-text !important;
+        }
+        .nav__link {
+            color: $dark-text;
+        }
+        .mode-btn {
+            button {
+                background: $dark-bg-alt;
+                color: $dark-text;
+            }
+        }
+    }
+    .section__title {
+        color: $dark-text;
+    }
 }
 
 // Layout
@@ -61,7 +89,6 @@ img {
     width: 100%;
     background-color: $container-color;
     z-index: $z-fixed;
-    transition: 0.4s;
 }
 
 // Active link

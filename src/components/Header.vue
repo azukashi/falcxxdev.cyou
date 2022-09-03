@@ -3,6 +3,7 @@
         <nav class="nav container">
             <router-link :to="{ name: 'Home' }" class="nav__logo"> Gifaldy Azka </router-link>
             <!-- <a href="/" class="nav__logo">Gifaldy Azka</a> -->
+            <ModeButton @modeState="handleMode" class="mobile" />
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -26,6 +27,7 @@
                             <span class="nav__name">About</span>
                         </router-link>
                     </li>
+                    <ModeButton @modeState="handleMode" class="desktop" />
                 </ul>
             </div>
         </nav>
@@ -33,17 +35,27 @@
 </template>
 
 <script lang="ts">
+import ModeButton from './ModeButton.vue';
 export default {
+    components: { ModeButton },
     data() {
         return {
             name: 'Gifaldy',
+            dark: true,
         };
+    },
+    methods: {
+        handleMode(state) {
+            this.dark = state;
+            this.$emit('modeState', this.dark);
+        },
     },
 };
 </script>
 
 <style lang="scss">
 @import '../styles/variable';
+@import '../styles/mixin';
 
 .router-link-exact-active {
     color: $first-color-alt !important;
@@ -57,6 +69,17 @@ export default {
 .nav__link {
     &:visited {
         color: $title-color;
+    }
+}
+.mobile {
+    display: none;
+}
+@include on-mobile {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: initial;
     }
 }
 </style>
