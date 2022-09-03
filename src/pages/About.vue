@@ -2,7 +2,7 @@
     <section class="container section section__height" id="about">
         <h2 class="section__title">About Me</h2>
         <hr />
-        <div id="image-container">
+        <div id="profile-picture">
             <Profile />
         </div>
         <div id="paragraph">
@@ -61,50 +61,56 @@
                 </div>
             </div>
         </div>
-        <div id="waifus" v-if="waifus">
-            <h2 class="pb">Current waifus</h2>
-            <p class="pb">
-                Beloved characters that i am very
-                <a href="https://www.urbandictionary.com/define.php?term=Simp" target="_blank">simped</a> to
-            </p>
-            <ul>
-                <div v-for="wf in waifus">
-                    <li>
-                        <a :href="wf.link" target="_blank">
-                            <template v-if="wf.name.jp"> {{ wf.name.jp }} ／ </template>
-                            {{ wf.name.en }}</a
-                        >
-                        <template v-if="wf.from">
-                            from
-                            <a :href="wf.fromLink" target="_blank">{{ wf.from }}</a>
-                        </template>
+        <hr />
+        <div id="games">
+            <h2>Play with me</h2>
+            <div v-for="g in games">
+                <ul>
+                    <li class="list game-badge">
+                        <strong>{{ g.name }}</strong> - UID: <code>{{ g.id }}</code
+                        >. {{ g.more }}
                     </li>
-                </div>
-            </ul>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div id="social">
+            <p>
+                You can reach me out via email at <a :href="`mailto:${myself.email}`">{{ myself.email }}</a> or via
+                socials below :
+            </p>
+            <div v-for="s in socials">
+                <SocialButton :name="s.name" :bg="s.bg" :color="s.color" :dest="s.url" />
+            </div>
         </div>
     </section>
 </template>
 
 <script lang="ts">
 import Profile from '../components/Profile.vue';
+import SocialButton from '../components/SocialButton.vue';
 import myself from '../data/self';
 import skills from '../data/skills';
-import waifus from '../data/waifus';
+import games from '../data/games';
+import socials from '../data/socials';
 export default {
     data() {
         return {
             myself,
             skills,
-            waifus,
+            games,
+            socials,
         };
     },
-    components: { Profile },
+    components: { Profile, SocialButton },
 };
 </script>
 
 <style lang="scss">
 @import '../styles/variable';
 @import '../styles/anchor';
+@import '../styles/mixin';
+
 // Base
 h2,
 h4,
@@ -112,27 +118,26 @@ p {
     font-family: $lexend;
     cursor: default;
 }
-details {
-    cursor: pointer;
-}
 hr {
     opacity: 0.6;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+details {
+    cursor: pointer;
+}
+code {
+    color: $first-color-alt;
+}
 // Main section
-#image-container {
+#profile-picture {
     display: flex;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.pb {
-    padding-bottom: 7px;
-}
 #paragraph,
 #skills {
-    padding-bottom: 20px;
     li {
         font-family: $lexend;
         margin-left: 18px;
@@ -140,16 +145,17 @@ hr {
         list-style: disc;
     }
 }
-#skills {
-    padding-bottom: 90px;
-}
-#waifus {
-    li {
-        font-family: $lexend;
-        list-style: disc;
-        margin-left: 18px;
-        cursor: default;
+#social {
+    padding-bottom: 4rem;
+    @include on-tablet {
+        padding-bottom: 12rem;
     }
+    @include on-mobile {
+        padding-bottom: 15rem;
+    }
+}
+.pb {
+    padding-bottom: 7px;
 }
 .grid-container {
     display: grid;
@@ -159,16 +165,6 @@ hr {
     display: flex;
     -webkit-box-align: start;
     flex-direction: column;
-    padding-bottom: 7px;
-}
-#info {
-    margin-top: 4px;
-    padding-bottom: 7px;
-    font-size: 12.5px;
-    font-family: 'Lexend', sans-serif;
-}
-.req-img {
-    margin-top: 4px;
     padding-bottom: 7px;
 }
 </style>
