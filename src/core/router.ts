@@ -5,7 +5,6 @@ import { Routes } from '../types/routes';
 import Home from '../pages/Home.vue';
 import About from '../pages/About.vue';
 import Projects from '../pages/Projects.vue';
-import Contact from '../pages/Contact.vue';
 import NotFound from '../pages/NotFound.vue';
 
 const routes: Routes = [
@@ -26,12 +25,6 @@ const routes: Routes = [
         name: 'Projects',
         component: Projects,
         meta: { title: 'Projects | Gifaldy Azka' },
-    },
-    {
-        path: '/contact',
-        name: 'Contact',
-        component: Contact,
-        meta: { title: 'Contact | Gifaldy Azka' },
     },
     {
         path: '/:catchAll(.*)',
