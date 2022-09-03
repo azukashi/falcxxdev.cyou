@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss">
 @import '../styles/variable';
-@import '../styles/anchor';
+
 // Base
 h1,
 h2,

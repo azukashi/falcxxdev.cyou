@@ -108,7 +108,6 @@ export default {
 
 <style lang="scss">
 @import '../styles/variable';
-@import '../styles/anchor';
 @import '../styles/mixin';
 
 // Base
