@@ -12,10 +12,6 @@
 <script lang="ts">
 export default {
     name: 'ModeButton',
-    mounted() {
-        const initUserTheme = this.getMediaPreference();
-        this.setTheme(initUserTheme);
-    },
     data() {
         return {
             userTheme: 'light-theme',
