@@ -5,14 +5,16 @@
             <component :is="Component"></component>
         </transition>
     </router-view>
+    <SpotifyStatus />
 </template>
 
 <script lang="ts">
 import Header from './components/Header.vue';
+import SpotifyStatus from './components/SpotifyStatus.vue';
 import 'material-icons/iconfont/outlined.css';
 export default {
     name: 'App',
-    components: { Header },
+    components: { Header, SpotifyStatus },
     beforeMount() {
         if (this.dark) document.body.classList.add('dark');
         if (!this.dark) document.body.classList.remove('dark');
