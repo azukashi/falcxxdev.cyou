@@ -23,7 +23,7 @@
         "@parcel/core": "2.7.0",
         "@parcel/transformer-sass": "2.7.0",
         "@parcel/transformer-vue": "2.7.0",
-        "@types/node": "18.8.0",
+        "@types/node": "18.11.8",
         "husky": "8.0.1",
         "parcel": "2.7.0",
         "prettier": "2.7.1",
