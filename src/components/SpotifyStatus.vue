@@ -1,5 +1,6 @@
 <script lang="ts">
 import axios from 'axios';
+import { Client } from 'spotify-api.js';
 
 export default {
     name: 'SpotifyStatus',
@@ -17,8 +18,22 @@ export default {
             },
         };
     },
-    beforeCreate() {
-        const token = process.env.SPOTIFY_BEARER_TOKEN;
+    beforeCreate: async function () {
+        let token = process.env.SPOTIFY_ACCESS_TOKEN;
+        // const client = await Client.create({
+        //     refreshToken: true,
+        //     retryOnRateLimit: true,
+        //     token: {
+        //         clientID: process.env.SPOTIFY_CLIENT_ID,
+        //         clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
+        //         redirectURL: process.env.SPOTIFY_REDIRECT_URL,
+        //         refreshToken: process.env.SPOTIFY_REFRESH_TOKEN,
+        //     },
+        //     onRefresh() {
+        //         console.log(`Token has been refreshed. New token: ${client.token}!`);
+        //         token = client.token;
+        //     },
+        // });
         const config = {
             headers: {
                 Accept: 'application/json',
@@ -33,7 +48,9 @@ export default {
                     if (!res.data.is_playing) return (this.res = null);
                     this.res = res;
                 })
-                .catch(() => {});
+                .catch(() => {
+                    this.res = null;
+                });
         }, 1000);
     },
 };
