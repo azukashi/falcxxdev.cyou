@@ -1,6 +1,7 @@
 <script lang="ts">
 import axios from 'axios';
 import { Client } from 'spotify-api.js';
+import bufferFrom from 'buffer-from';
 
 export default {
     name: 'SpotifyStatus',
@@ -20,6 +21,8 @@ export default {
     },
     beforeCreate: async function () {
         let token = process.env.SPOTIFY_ACCESS_TOKEN;
+        const clientID = process.env.SPOTIFY_CLIENT_ID;
+        const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
         // const client = await Client.create({
         //     refreshToken: true,
         //     retryOnRateLimit: true,
@@ -41,6 +44,9 @@ export default {
                 Authorization: `Bearer ${token}`,
             },
         };
+        // setInterval(() => {
+        // disini kode buat dapetin token setiap 1 jam
+        // }, 3600)
         setInterval(() => {
             axios
                 .get('https://api.spotify.com/v1/me/player/currently-playing', config)
