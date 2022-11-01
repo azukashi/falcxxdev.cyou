@@ -1,6 +1,6 @@
 <template>
     <section class="container section section__height" id="projects">
-        <h2 class="section__title">Projects</h2>
+        <h2 class="section__title">&lt;Projects /&gt;</h2>
         <hr />
         <p class="description">Some projects that i've been working on</p>
         <div v-for="p in projects">
