@@ -1,7 +1,7 @@
 <template>
     <header class="header scroll-header" id="header">
         <nav class="nav container">
-            <router-link :to="{ name: 'Home' }" class="nav__logo"> Gifaldy Azka </router-link>
+            <router-link :to="{ name: 'Home' }" class="nav__logo">&lt;Gifaldy Azka /&gt;</router-link>
             <!-- <a href="/" class="nav__logo">Gifaldy Azka</a> -->
             <ModeButton @modeState="handleMode" class="mobile" />
 
