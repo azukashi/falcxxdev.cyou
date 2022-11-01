@@ -1,6 +1,6 @@
 <template>
     <section class="container section section__height" id="about">
-        <h2 class="section__title">About Me</h2>
+        <h2 class="section__title">&lt;About Me /&gt;</h2>
         <hr />
         <div id="profile-picture">
             <Profile />
@@ -16,6 +16,14 @@
             <p>
                 I started learning about Data and Algorithm since 2020 with C++ language. And now i spend more time to
                 explore Web development using JavaScript, Node.js, Svelte, and Vue.js.
+            </p>
+            <br />
+            <p>
+                I am currently studying about
+                <strong>AVE (Aviation Electronic) or EPU (Elektronika Pesawat Udara)</strong> on
+                <a href="https://smkn12bdg.sch.id">SMKN 12 Bandung</a>. Almost everything about electronics inside
+                aircrafts are learned here. Here i also learned about design and manufacturing an PCB using Proteus
+                (software), Logic gates, etc.
             </p>
             <br />
             <p>
