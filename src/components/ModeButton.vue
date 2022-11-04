@@ -1,9 +1,9 @@
 <template>
     <div class="mode-btn">
-        <button @click="toggle()" v-if="!dark">
+        <button @click="toggle()" v-if="!dark" data-blobity-tooltip="Dark mode good">
             <span class="material-icons-outlined">dark_mode</span>
         </button>
-        <button @click="toggle()" v-if="dark">
+        <button @click="toggle()" v-if="dark" data-blobity-tooltip="Don't break ur eyes pls">
             <span class="material-icons-outlined">light_mode</span>
         </button>
     </div>
