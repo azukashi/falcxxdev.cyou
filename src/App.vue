@@ -15,7 +15,7 @@ import 'material-icons/iconfont/outlined.css';
 export default {
     name: 'App',
     components: { Header, SpotifyStatus },
-    beforeMount() {
+    mounted() {
         if (this.dark) document.body.classList.add('dark');
         if (!this.dark) document.body.classList.remove('dark');
     },

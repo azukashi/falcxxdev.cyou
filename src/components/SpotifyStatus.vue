@@ -1,7 +1,6 @@
 <script lang="ts">
 import axios from 'axios';
-import { Client } from 'spotify-api.js';
-import bufferFrom from 'buffer-from';
+import qs from 'querystring';
 
 export default {
     name: 'SpotifyStatus',
@@ -17,45 +16,57 @@ export default {
                     },
                 },
             },
+            tokenData: '',
         };
     },
-    beforeCreate: async function () {
-        let token = process.env.SPOTIFY_ACCESS_TOKEN;
-        const clientID = process.env.SPOTIFY_CLIENT_ID;
-        const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-        // const client = await Client.create({
-        //     refreshToken: true,
-        //     retryOnRateLimit: true,
-        //     token: {
-        //         clientID: process.env.SPOTIFY_CLIENT_ID,
-        //         clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-        //         redirectURL: process.env.SPOTIFY_REDIRECT_URL,
-        //         refreshToken: process.env.SPOTIFY_REFRESH_TOKEN,
-        //     },
-        //     onRefresh() {
-        //         console.log(`Token has been refreshed. New token: ${client.token}!`);
-        //         token = client.token;
-        //     },
-        // });
-        const config = {
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`,
-            },
+    created: async function () {
+        // POST Request : Refresh Token
+        const refreshData = {
+            grant_type: 'refresh_token',
+            refresh_token: process.env.SPOTIFY_REFRESH_TOKEN,
         };
-        // setInterval(() => {
-        // disini kode buat dapetin token setiap 1 jam
-        // }, 3600)
+        const refreshOpt = {
+            url: 'https://accounts.spotify.com/api/token',
+            method: 'POST',
+            headers: { Authorization: 'Basic ' + process.env.SPOTIFY_BASIC_AUTH_BUFFER },
+            data: qs.stringify(refreshData),
+        };
+        await axios
+            .request(refreshOpt)
+            .then(result => {
+                this.tokenData = result.data.access_token;
+            })
+            .catch(err => {
+                console.log(err);
+            });
+        setInterval(async () => {
+            await axios
+                .request(refreshOpt)
+                .then(result => {
+                    this.tokenData = result.data.access_token;
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        }, 3600000);
+        // Fetch current playing
         setInterval(() => {
+            const getDataConfig = {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${this.tokenData}`,
+                },
+            };
             axios
-                .get('https://api.spotify.com/v1/me/player/currently-playing', config)
+                .get('https://api.spotify.com/v1/me/player/currently-playing', getDataConfig)
                 .then(res => {
                     if (!res.data.is_playing) return (this.res = null);
                     this.res = res;
                 })
-                .catch(() => {
+                .catch(err => {
                     this.res = null;
+                    console.log(err);
                 });
         }, 1000);
     },
