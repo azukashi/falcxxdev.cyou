@@ -1,6 +1,6 @@
 {
     "name": "portfolio",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "description": "My personal portfolio with vue",
     "scripts": {
         "dev": "parcel src/index.html --host=0.0.0.0 --port=8080",
