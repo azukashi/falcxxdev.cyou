@@ -13,7 +13,10 @@
         "type": "git",
         "url": "https://github.com/gifaldyazkaa/falcxxdev.ml.git"
     },
-    "author": "Gifaldy Azka <me@falcxxdev.ml>",
+    "author": {
+        "name": "Gifaldy Azka",
+        "url": "https://falcxxdev.ml"
+    },
     "license": "MIT",
     "alias": {
         "process": false,
