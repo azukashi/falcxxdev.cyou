@@ -34,7 +34,7 @@ Just a cool small feature to display my currently playing song on Spotify, every
 
 The cursor are inverted everything and any elements that hovered/focused with the cursor, and it has ~~little bit~~ different behaviour than the default & normal cursor.
 
-<video src="https://cdn.upload.systems/uploads/SqqhkLhC.mp4" />
+https://user-images.githubusercontent.com/68645946/200133953-ab1c7f50-0f27-41cf-8dff-d9929adb836b.mp4
 
 ## ➡️ Development
 
