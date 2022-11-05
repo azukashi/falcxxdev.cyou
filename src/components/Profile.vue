@@ -5,7 +5,7 @@
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 250 250"
         class="root"
-        data-blobity-tooltip="Google One borders are included"
+        data-blobity-tooltip="Google One borders are included 😎"
     >
         <defs>
             <mask id="mask">
