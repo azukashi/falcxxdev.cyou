@@ -19,9 +19,9 @@
             </p>
             <br />
             <p>
-                I am currently studying about
+                I am currently studying
                 <strong>AVE (Aviation Electronic) or EPU (Elektronika Pesawat Udara)</strong> on
-                <a href="https://smkn12bdg.sch.id">SMKN 12 Bandung</a>. Almost everything about electronics inside
+                <a href="https://smkn12bandung.sch.id">SMKN 12 Bandung</a>. Almost everything about electronics inside
                 aircrafts are learned here. Here i also learned about design and manufacturing an PCB using Proteus
                 (software), Logic gates, etc.
             </p>
