@@ -1,4 +1,5 @@
 <script lang="ts">
+import Icon from './Icon.vue';
 import axios from 'axios';
 import qs from 'querystring';
 
@@ -19,6 +20,7 @@ export default {
             tokenData: '',
         };
     },
+    components: { Icon },
     created: async function () {
         // POST Request : Refresh Token
         const refreshData = {
@@ -76,7 +78,10 @@ export default {
 <template>
     <div v-if="res" class="spoti__card">
         <div class="spoti__card_title">
-            <h4>I am currently listening to</h4>
+            <h4>
+                I am currently listening to
+                <span class="spoti__card_title_icon"><Icon name="logos:spotify-icon" /></span>
+            </h4>
         </div>
         <div class="spoti__card_content">
             <a :href="res.data.item.album.external_urls.spotify"
@@ -114,6 +119,10 @@ export default {
         margin-top: 10px;
         margin-left: 10px;
         padding-right: 50px;
+        & span {
+            position: absolute;
+            right: 10px;
+        }
     }
     &_content {
         margin-top: 10px;
