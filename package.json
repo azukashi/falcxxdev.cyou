@@ -41,7 +41,7 @@
         "nprogress": "0.2.0",
         "querystring": "0.2.1",
         "querystring-es3": "0.2.1",
-        "vue": "3.2.44",
+        "vue": "3.2.45",
         "vue-router": "4.1.6"
     }
 }
