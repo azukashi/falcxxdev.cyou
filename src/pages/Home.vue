@@ -5,14 +5,17 @@
             <hr class="separator" />
             <p>Website Developer</p>
         </div>
+        <SpotifyStatus />
     </section>
 </template>
 
 <script lang="ts">
 import self from '../data/self';
+import SpotifyStatus from '../components/SpotifyStatus.vue';
 
 export default {
     name: 'Home',
+    components: { SpotifyStatus },
     data() {
         return {
             name: self.name,
