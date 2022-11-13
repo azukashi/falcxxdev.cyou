@@ -137,6 +137,7 @@ export default {
         &_info {
             margin-left: 10px;
             margin-right: 10px;
+            font-family: $lexend;
             .platform {
                 font-size: 9px;
             }
