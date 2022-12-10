@@ -5,7 +5,7 @@ specifiers:
   '@parcel/core': 2.8.1
   '@parcel/transformer-sass': 2.8.1
   '@parcel/transformer-vue': 2.8.1
-  '@types/node': 18.11.12
+  '@types/node': 18.11.13
   axios: 1.2.1
   blobity: 0.2.1
   husky: 8.0.2
@@ -35,7 +35,7 @@ devDependencies:
   '@parcel/core': 2.8.1
   '@parcel/transformer-sass': 2.8.1_@parcel+core@2.8.1
   '@parcel/transformer-vue': 2.8.1_@parcel+core@2.8.1
-  '@types/node': 18.11.12
+  '@types/node': 18.11.13
   husky: 8.0.2
   parcel: 2.8.1
   prettier: 2.8.1
@@ -990,8 +990,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /@types/node/18.11.12:
-    resolution: {integrity: sha512-FgD3NtTAKvyMmD44T07zz2fEf+OKwutgBCEVM8GcvMGVGaDktiLNTDvPwC/LUe3PinMW+X6CuLOF2Ui1mAlSXg==}
+  /@types/node/18.11.13:
+    resolution: {integrity: sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==}
     dev: true
 
   /@types/parse-json/4.0.0:
