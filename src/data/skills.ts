@@ -19,6 +19,8 @@ const skills: Skills = {
         { name: 'SASS' },
         { name: 'SvelteKit' },
         { name: 'Vue.js' },
+        { name: 'Nuxt 3' },
+        { name: 'Tailwind CSS' },
         { name: 'Bootstrap' },
     ],
     backEndSkills: [{ name: 'Node.js' }, { name: 'MySQL' }, { name: 'MongoDB' }, { name: 'PHP' }],

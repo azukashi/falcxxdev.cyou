@@ -6,9 +6,14 @@ type Games = {
 
 const games: Games = [
     {
-        name: 'Tower of Fantasy',
-        id: '1600758414',
-        more: 'SEA - Chandra server',
+        name: 'Honkai Impact 3rd',
+        id: '18465860',
+        more: 'SEA server',
+    },
+    {
+        name: 'Genshin Impact',
+        id: '813451875',
+        more: 'Asia server',
     },
 ];
 
