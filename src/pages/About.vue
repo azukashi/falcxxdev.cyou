@@ -72,7 +72,7 @@
         <hr />
         <div id="games">
             <h2>Play with me</h2>
-            <div v-for="g in games">
+            <div v-for="g in games" class="list-root">
                 <ul>
                     <li class="list game-badge">
                         <strong>{{ g.name }}</strong> - UID: <code>{{ g.id }}</code
@@ -173,5 +173,16 @@ code {
     -webkit-box-align: start;
     flex-direction: column;
     padding-bottom: 7px;
+}
+#games {
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+    .list {
+        margin: 0;
+        padding: 0;
+        margin-left: 1.2rem;
+        list-style: disc;
+    }
 }
 </style>
