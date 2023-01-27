@@ -6,8 +6,8 @@ specifiers:
   '@parcel/transformer-sass': 2.8.3
   '@parcel/transformer-vue': 2.8.3
   '@types/node': 18.11.18
-  axios: 1.2.3
-  blobity: 0.2.1
+  axios: 1.2.5
+  blobity: 0.2.3
   husky: 8.0.3
   material-icons: 1.13.1
   nprogress: 0.2.0
@@ -15,15 +15,15 @@ specifiers:
   prettier: 2.8.3
   querystring: 0.2.1
   querystring-es3: 0.2.1
-  serve: 14.1.2
+  serve: 14.2.0
   typescript: 4.9.4
   vue: 3.2.45
   vue-router: 4.1.6
 
 dependencies:
   '@iconify/vue': 4.0.2_vue@3.2.45
-  axios: 1.2.3
-  blobity: 0.2.1_vue@3.2.45
+  axios: 1.2.5
+  blobity: 0.2.3_vue@3.2.45
   material-icons: 1.13.1
   nprogress: 0.2.0
   querystring: 0.2.1
@@ -39,7 +39,7 @@ devDependencies:
   husky: 8.0.3
   parcel: 2.8.3
   prettier: 2.8.3
-  serve: 14.1.2
+  serve: 14.2.0
   typescript: 4.9.4
 
 packages:
@@ -1080,8 +1080,8 @@ packages:
   /@vue/shared/3.2.45:
     resolution: {integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==}
 
-  /@zeit/schemas/2.21.0:
-    resolution: {integrity: sha512-/J4WBTpWtQ4itN1rb3ao8LfClmVcmz2pO6oYb7Qd4h7VSqUhIbJIvrykz9Ew1WMg6eFWsKdsMHc5uPbFxqlCpg==}
+  /@zeit/schemas/2.29.0:
+    resolution: {integrity: sha512-g5QiLIfbg3pLuYUJPlisNKY+epQJTcMDsOnVNkscrDP1oi7vmJnzOANYJI/1pZcVJ6umUkBv3aFtlg1UvUHGzA==}
     dev: true
 
   /abortcontroller-polyfill/1.7.3:
@@ -1166,8 +1166,8 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /axios/1.2.3:
-    resolution: {integrity: sha512-pdDkMYJeuXLZ6Xj/Q5J3Phpe+jbGdsSzlQaFVkMQzRUL05+6+tetX8TV3p4HrU4kzuO9bt+io/yGQxuyxA/xcw==}
+  /axios/1.2.5:
+    resolution: {integrity: sha512-9pU/8mmjSSOb4CXVsvGIevN+MlO/t9OWtKadTaLuN85Gge3HGorUckgp8A/2FH4V4hJ7JuQ3LIeI7KAV9ITZrQ==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -1191,8 +1191,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /blobity/0.2.1_vue@3.2.45:
-    resolution: {integrity: sha512-Soxkt4ILpL6sUR76WmAJBApZJ1A7i69527TVk2S1wmTIo0Httv4gS+IaSSsDTUGtQLqIZTwdmgMGpfK0bP58Cg==}
+  /blobity/0.2.3_vue@3.2.45:
+    resolution: {integrity: sha512-ooIyE44R+Gc+DbGCkMAcyAPln30nvQnZIsjmCDO9PUUoRkv2fNliHhsunL+GFp5JmAzbinO4iCeBwjjO6JeEcg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       vue: next
@@ -2501,12 +2501,12 @@ packages:
       range-parser: 1.2.0
     dev: true
 
-  /serve/14.1.2:
-    resolution: {integrity: sha512-luwVfJwbeE7dhCKeRU0vIBpt4bXdbAfzwsWJIQ5eqrIW2e+4nLWXbSlZ0WzelSFHQq+FlueOW6dr90jEewS9zw==}
+  /serve/14.2.0:
+    resolution: {integrity: sha512-+HOw/XK1bW8tw5iBilBz/mJLWRzM8XM6MPxL4J/dKzdxq1vfdEWSwhaR7/yS8EJp5wzvP92p1qirysJvnEtjXg==}
     engines: {node: '>= 14'}
     hasBin: true
     dependencies:
-      '@zeit/schemas': 2.21.0
+      '@zeit/schemas': 2.29.0
       ajv: 8.11.0
       arg: 5.0.2
       boxen: 7.0.0
