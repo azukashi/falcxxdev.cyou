@@ -1,4 +1,4 @@
-User-agent: *
+User-Agent: *
 Allow: /
 
 Sitemap: http://www.falcxxdev.ml/sitemap.xml
