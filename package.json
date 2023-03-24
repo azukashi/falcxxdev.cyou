@@ -25,9 +25,9 @@
         "@parcel/core": "2.8.3",
         "@parcel/transformer-sass": "2.8.3",
         "@parcel/transformer-vue": "2.8.3",
-        "@types/node": "18.15.6",
+        "@types/node": "18.15.8",
         "parcel": "2.8.3",
-        "prettier": "2.8.6",
+        "prettier": "2.8.7",
         "serve": "14.2.0",
         "typescript": "5.0.2"
     },
