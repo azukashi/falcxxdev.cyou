@@ -1,0 +1,17 @@
+{
+    "name": "falcxxdev.cyou",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "@nuxtjs/tailwindcss": "^6.6.5",
+        "nuxt": "^3.3.3",
+        "nuxt-icon": "^0.3.3",
+        "typescript": "^5.0.3"
+    }
+}
