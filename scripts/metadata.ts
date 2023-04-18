@@ -5,7 +5,7 @@ export const _initHead: () => void = () => {
             lang: 'en',
         },
         bodyAttrs: {
-            class: 'bg-[#000000] text-white',
+            class: 'bg-black text-white',
         },
         meta: [
             // General tags
