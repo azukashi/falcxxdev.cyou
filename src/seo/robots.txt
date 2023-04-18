@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: http://www.falcxxdev.cyou/sitemap.xml

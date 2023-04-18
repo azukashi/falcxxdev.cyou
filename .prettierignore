@@ -2,6 +2,6 @@
 pnpm-lock.yaml
 package-lock.json
 
-# Generated build
+# Nuxt
+.nuxt/
 dist/
-.parcel-cache
