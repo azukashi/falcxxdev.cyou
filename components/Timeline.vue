@@ -10,9 +10,21 @@ type Timeline = {
 const timelines: Timeline = [
     {
         latest: true,
-        icon: 'ri:brush-4-fill',
+        icon: 'material-symbols:deployed-code',
         title: 'Website UI v2.0.0',
-        date: 'April 20th, 2023',
+        date: 'April 29th, 2023',
+        description: 'Stable release from previous release for this website.',
+    },
+    {
+        icon: 'mdi:sony-playstation',
+        title: 'First Livestream on YouTube',
+        date: 'April 29th, 2023',
+        description: 'Starting first Livestreaming journey on YouTube using PS4.',
+    },
+    {
+        icon: 'mdi:source-branch-plus',
+        title: 'Website UI v2.0.0-beta.1',
+        date: 'April 18th, 2023',
         description:
             "This website is just redesigned into new looking user interface. This design system is inspired from Vercel's Geist UI.",
     },
