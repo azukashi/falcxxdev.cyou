@@ -5,7 +5,7 @@ _initHead();
 <template>
     <NuxtLoadingIndicator color="var(--gradient)" :throttle="0" :height="3" />
     <Navigation />
-    <div class="container font-lexend px-10 lg:px-20">
+    <div class="container max-w-full font-lexend px-10 lg:px-20">
         <slot />
     </div>
 </template>
