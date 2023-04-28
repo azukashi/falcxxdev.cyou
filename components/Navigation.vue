@@ -4,7 +4,7 @@
     <div>
         <header class="font-lexend">
             <nav
-                class="flex flex-row fixed top-0 right-0 left-0 max-w-full items-center justify-between bg-black ps-[3vw] pe-[3vw] py-3 z-50 border-b-2 border-[#111111]"
+                class="flex flex-row fixed top-0 right-0 left-0 max-w-full items-center justify-between bg-black bg-opacity-30 backdrop-blur-md ps-[3vw] pe-[3vw] py-3 z-50 border-b-2 border-[#111111]"
                 v-motion-slide-top
             >
                 <NuxtLink to="/" class="navbar__link" aria-label="Falcxxdev">
