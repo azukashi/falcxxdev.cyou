@@ -22,7 +22,7 @@
 }
 
 .project__card {
-    @apply flex flex-col bg-[#080808] hover:bg-[#0e0e0e] rounded-[10px] min-h-[320px] max-h-[500px] border border-[#333] transition-all;
+    @apply flex flex-col bg-[#080808] hover:bg-[#0e0e0e] rounded-[10px] min-h-[320px] border border-[#333] transition-all;
 }
 .project__card_img {
     @apply inset-0 box-border p-0 border-none m-auto block min-w-full min-h-full max-w-full max-h-full rounded-tl-[10px] rounded-tr-[10px];
