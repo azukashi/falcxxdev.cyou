@@ -56,6 +56,8 @@
                     <span class="text-[#3CCF91] font-semibold">Front-end Development</span>.
                     <br />
                     Feel free to get in touch and talk more about your projects.
+                    <br />
+                    Or just want to keep in touch with my other social media.
                 </p>
             </div>
             <div class="mt-10">
@@ -63,10 +65,20 @@
                     <a target="_blank" class="btn__link me-4" href="https://github.com/gifaldyazkaa"
                         ><Icon name="mdi:github" size="1.2rem" class="btn__link_icon" /> GitHub</a
                     >
+                    <a target="_blank" class="btn__link me-4" href="https://twitter.com/falcxxdev"
+                        ><Icon name="mdi:twitter" size="1.2rem" class="btn__link_icon" /> Twitter</a
+                    >
                     <a target="_blank" class="btn__link me-4" href="https://instagram.com/falcxxdev"
                         ><Icon name="mdi:instagram" size="1.2rem" class="btn__link_icon" /> Instagram</a
                     >
-                    <a target="_blank" class="btn__link" href="mailto:me@falcxxdev.cyou"
+                    <br />
+                    <a target="_blank" class="btn__link mt-4 me-4" href="https://discord.com/users/446197585376575489"
+                        ><Icon name="ic:baseline-discord" size="1.2rem" class="btn__link_icon" /> Discord</a
+                    >
+                    <a target="_blank" class="btn__link mt-4 me-4" href="https://youtube.com/@falcxxdev"
+                        ><Icon name="mdi:youtube" size="1.2rem" class="btn__link_icon" /> YouTube</a
+                    >
+                    <a target="_blank" class="btn__link mt-4" href="mailto:me@falcxxdev.cyou"
                         ><Icon name="material-symbols:mail-rounded" size="1.2rem" class="btn__link_icon" /> Email</a
                     >
                 </div>
