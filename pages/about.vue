@@ -61,7 +61,7 @@
                 </p>
             </div>
             <div class="mt-10">
-                <div class="flex flex-row" v-motion-slide-visible-once-bottom>
+                <div class="inline-block" v-motion-slide-visible-once-bottom>
                     <a target="_blank" class="btn__link me-4" href="https://github.com/gifaldyazkaa"
                         ><Icon name="mdi:github" size="1.2rem" class="btn__link_icon" /> GitHub</a
                     >
