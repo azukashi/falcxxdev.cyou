@@ -36,9 +36,10 @@
                 <br />
                 <br />
                 When I'm not doing anything with programming, I play
-                <span class="text-[#3CCF91] font-semibold">Genshin Impact</span>, doing voice communication with friends
-                on <span class="text-[#3CCF91] font-semibold">Discord</span>, went outside to shoot some pictures using
-                my camera, etc.
+                <span class="text-[#3CCF91] font-semibold">Genshin Impact</span>,
+                <span class="text-[#3CCF91] font-semibold">Honkai: Star Rail</span>, doing voice communication with
+                friends on <span class="text-[#3CCF91] font-semibold">Discord</span>, went outside to shoot some
+                pictures using my camera, etc.
             </p>
         </div>
         <div class="my-4" v-motion-slide-visible-once-bottom>
