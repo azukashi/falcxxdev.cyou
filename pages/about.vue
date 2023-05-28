@@ -60,15 +60,15 @@
                     Or just want to keep in touch with my other social media.
                 </p>
             </div>
-            <div class="mt-10">
+            <div class="mt-6">
                 <div class="inline-block" v-motion-slide-visible-once-bottom>
-                    <a target="_blank" class="btn__link me-4" href="https://github.com/gifaldyazkaa"
+                    <a target="_blank" class="btn__link mt-4 me-4" href="https://github.com/gifaldyazkaa"
                         ><Icon name="mdi:github" size="1.2rem" class="btn__link_icon" /> GitHub</a
                     >
-                    <a target="_blank" class="btn__link me-4" href="https://twitter.com/falcxxdev"
+                    <a target="_blank" class="btn__link mt-4 me-4" href="https://twitter.com/falcxxdev"
                         ><Icon name="mdi:twitter" size="1.2rem" class="btn__link_icon" /> Twitter</a
                     >
-                    <a target="_blank" class="btn__link me-4" href="https://instagram.com/falcxxdev"
+                    <a target="_blank" class="btn__link mt-4 me-4" href="https://instagram.com/falcxxdev"
                         ><Icon name="mdi:instagram" size="1.2rem" class="btn__link_icon" /> Instagram</a
                     >
                     <br />
