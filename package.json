@@ -16,11 +16,11 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@nuxtjs/tailwindcss": "6.7.0",
+        "@nuxtjs/tailwindcss": "6.8.0",
         "@vueuse/motion": "2.0.0",
-        "nuxt": "3.5.1",
+        "nuxt": "3.5.3",
         "nuxt-icon": "0.4.1",
         "prettier": "2.8.8",
-        "typescript": "5.0.4"
+        "typescript": "5.1.3"
     }
 }
