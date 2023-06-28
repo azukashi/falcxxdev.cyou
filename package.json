@@ -6,7 +6,6 @@
         "build": "nuxt build",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
-        "lint": "prettier -c .",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare"
     },
@@ -20,7 +19,6 @@
         "@vueuse/motion": "2.0.0",
         "nuxt": "3.6.1",
         "nuxt-icon": "0.4.1",
-        "prettier": "2.8.8",
         "typescript": "5.1.3"
     }
 }
