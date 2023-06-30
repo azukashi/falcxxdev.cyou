@@ -31,6 +31,10 @@
     @apply inline-flex align-top items-center max-w-full font-semibold leading-[1.2] min-h-[1.5rem] min-w-[1.5rem] text-sm rounded-md px-2 bg-white bg-opacity-[0.16] text-[#E2E8F0];
 }
 
+.hobbies__card {
+    @apply max-w-full overflow-hidden relative cursor-zoom-in bg-[#080808] hover:bg-[#0e0e0e] rounded-[10px] h-auto border border-[#333] hover:brightness-75 transition-all;
+}
+
 ::-webkit-scrollbar {
     @apply w-2 bg-[#080808];
 }
