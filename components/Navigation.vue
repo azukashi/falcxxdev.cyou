@@ -15,11 +15,15 @@
                         ><span class="md:hidden"><Icon name="material-symbols:home-rounded" /></span>
                         <span class="hidden md:block">Home</span></NuxtLink
                     >
-                    <NuxtLink to="/projects" class="navbar__lnk" aria-label="About page"
+                    <NuxtLink to="/projects" class="navbar__lnk" aria-label="Projects page"
                         ><span class="md:hidden"><Icon name="material-symbols:work" /></span>
                         <span class="hidden md:block">Projects</span></NuxtLink
                     >
-                    <NuxtLink to="/about" class="navbar__lnk" aria-label="Models page"
+                    <NuxtLink to="/hobbies" class="navbar__lnk" aria-label="Hobbies page"
+                        ><span class="md:hidden"><Icon name="ion:camera-sharp" /></span>
+                        <span class="hidden md:block">Hobbies</span></NuxtLink
+                    >
+                    <NuxtLink to="/about" class="navbar__lnk" aria-label="About page"
                         ><span class="md:hidden"><Icon name="mdi:account-circle" /></span>
                         <span class="hidden md:block">About</span></NuxtLink
                     >
