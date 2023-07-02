@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { data }: any = await useFetch('/api/sanity?schema=about');
+</script>
 
 <template>
     <div class="my-[14vh] lg:mt-[20vh]">
@@ -8,18 +10,13 @@
                 src="https://svgsilh.com/svg/26432.svg"
                 alt="Dots"
             />
-            <img
-                class="w-56 rounded-full"
-                src="https://avatars.githubusercontent.com/u/68645946"
-                alt="My Picture"
-                v-motion-slide-visible-once-top
-            />
+            <img class="w-56 rounded-full" :src="data.picture" :alt="data.name" v-motion-slide-visible-once-top />
         </div>
         <div class="my-4">
             <p class="text-base text-[#8F9094]" v-motion-slide-visible-once-left>
-                Hey! I'm <span class="text-white font-semibold">Gifaldy Azka</span>. Born and live in
-                <span class="text-[#3CCF91] font-semibold">Bandung, West Java, Indonesia</span>. I've been close to a
-                computer since an early age, and been passionate about it ever since.
+                Hey! I'm <span class="text-white font-semibold">{{ data.name }}</span
+                >. Born and live in <span class="text-[#3CCF91] font-semibold">{{ data.born_in }}</span
+                >. I've been close to a computer since an early age, and been passionate about it ever since.
                 <br />
                 <br />
                 I started learning about Data and Algorithm since 2020 with C++ language. And now I spend more time to
@@ -28,18 +25,14 @@
                 <br />
                 I really liked to build stuff using no-code tools back in 2019, and from that, I explored how to code
                 myself, fast-forward to today, I do programming in various languages and technologies. Currently focused
-                on <span class="text-[#3CCF91] font-semibold">Web development</span>,
-                <span class="text-[#3CCF91] font-semibold">Open-source projects</span>,
-                <span class="text-[#3CCF91] font-semibold">Aviation Electronics</span>,
-                <span class="text-[#3CCF91] font-semibold">Photography</span>, and
-                <span class="text-[#3CCF91] font-semibold">Videography</span>.
+                on <span v-for="focus in data.focused_on" class="text-[#3CCF91] font-semibold">{{ focus }}, </span> and
+                many more.
                 <br />
                 <br />
                 When I'm not doing anything with programming, I play
-                <span class="text-[#3CCF91] font-semibold">Genshin Impact</span>,
-                <span class="text-[#3CCF91] font-semibold">Honkai: Star Rail</span>, doing voice communication with
-                friends on <span class="text-[#3CCF91] font-semibold">Discord</span>, went outside to shoot some
-                pictures using my camera, etc.
+                <span v-for="thing in data.when_free" class="text-[#3CCF91] font-semibold">{{ thing }}, </span> doing
+                voice communication with friends on <span class="text-[#3CCF91] font-semibold">Discord</span>, went
+                outside to shoot some pictures using my camera, etc.
             </p>
         </div>
         <div class="my-4" v-motion-slide-visible-once-bottom>
@@ -61,25 +54,9 @@
                 </p>
             </div>
             <div class="mt-6">
-                <div class="inline-block" v-motion-slide-visible-once-bottom>
-                    <a target="_blank" class="btn__link mt-4 me-4" href="https://github.com/gifaldyazkaa"
-                        ><Icon name="mdi:github" size="1.2rem" class="btn__link_icon" /> GitHub</a
-                    >
-                    <a target="_blank" class="btn__link mt-4 me-4" href="https://twitter.com/falcxxdev"
-                        ><Icon name="mdi:twitter" size="1.2rem" class="btn__link_icon" /> Twitter</a
-                    >
-                    <a target="_blank" class="btn__link mt-4 me-4" href="https://instagram.com/falcxxdev"
-                        ><Icon name="mdi:instagram" size="1.2rem" class="btn__link_icon" /> Instagram</a
-                    >
-                    <br />
-                    <a target="_blank" class="btn__link mt-4 me-4" href="https://discord.com/users/446197585376575489"
-                        ><Icon name="ic:baseline-discord" size="1.2rem" class="btn__link_icon" /> Discord</a
-                    >
-                    <a target="_blank" class="btn__link mt-4 me-4" href="https://youtube.com/@falcxxdev"
-                        ><Icon name="mdi:youtube" size="1.2rem" class="btn__link_icon" /> YouTube</a
-                    >
-                    <a target="_blank" class="btn__link mt-4" href="mailto:me@falcxxdev.cyou"
-                        ><Icon name="material-symbols:mail-rounded" size="1.2rem" class="btn__link_icon" /> Email</a
+                <div class="inline-block text-center" v-motion-slide-visible-once-bottom>
+                    <a v-for="social in data.socials" target="_blank" class="btn__link mt-4 me-4" :href="social.url"
+                        ><Icon :name="social.icon" size="1.2rem" class="btn__link_icon" /> {{ social.name }}</a
                     >
                 </div>
             </div>

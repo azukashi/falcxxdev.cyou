@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { data }: any = await useFetch('/api/sanity?schema=home');
+</script>
 
 <template>
     <div class="flex items-start content-start flex-col my-[20vh]">
@@ -8,13 +10,11 @@
                 Hey there!, I'm-
             </h1>
         </div>
-        <h2 class="text-6xl lg:text-8xl z-1 font-extrabold my-1" v-motion-slide-visible-bottom>Gifaldy Azka.</h2>
+        <h2 class="text-6xl lg:text-8xl z-1 font-extrabold my-1" v-motion-slide-visible-bottom>{{ data.name }}.</h2>
         <div class="mt-10">
-            <h3 class="text-xl lg:text-2xl font-semibold text-[#8F9094]" v-motion-slide-visible-left>
-                <span class="text-white">Web Developer.</span>
-                A self-taught developer with an
-                <br class="hidden lg:block" />
-                interest in Computer Science & Photography.
+            <h3 class="text-xl lg:text-2xl font-semibold text-[#8F9094] md:w-[36rem]" v-motion-slide-visible-left>
+                <span class="text-white">{{ data.role }}.</span>
+                {{ data.bio }}
             </h3>
         </div>
         <div class="mt-10">
@@ -26,11 +26,8 @@
         </div>
         <div class="mt-10">
             <div class="flex flex-row" v-motion-slide-visible-bottom>
-                <a target="_blank" class="btn__link" href="https://github.com/gifaldyazkaa"
-                    ><Icon name="mdi:github" size="1.2rem" class="btn__link_icon" /> GitHub</a
-                >
-                <a target="_blank" class="btn__link ms-4" href="mailto:me@falcxxdev.cyou"
-                    ><Icon name="material-symbols:mail-rounded" size="1.2rem" class="btn__link_icon" /> Email</a
+                <a v-for="social in data.socials" target="_blank" class="btn__link mr-4" :href="social.url"
+                    ><Icon :name="social.icon" size="1.2rem" class="btn__link_icon" /> {{ social.name }}</a
                 >
             </div>
         </div>
