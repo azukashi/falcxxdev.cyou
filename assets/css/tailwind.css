@@ -32,7 +32,7 @@
 }
 
 .hobbies__card {
-    @apply max-w-full overflow-hidden relative cursor-zoom-in bg-[#080808] hover:bg-[#0e0e0e] rounded-[10px] h-auto border border-[#333] hover:brightness-75 transition-all;
+    @apply max-w-full overflow-hidden relative bg-[#080808] hover:bg-[#0e0e0e] rounded-[10px] h-auto border border-[#333] hover:brightness-75 transition-all;
 }
 
 ::-webkit-scrollbar {
