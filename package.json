@@ -15,7 +15,10 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "@nuxt/image": "1.0.0-rc.1",
+        "@nuxtjs/sanity": "1.7.3",
         "@nuxtjs/tailwindcss": "6.8.0",
+        "@sanity/image-url": "1.0.2",
         "@vueuse/motion": "2.0.0",
         "nuxt": "3.6.1",
         "nuxt-icon": "0.4.2",
