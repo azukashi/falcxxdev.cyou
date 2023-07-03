@@ -13,7 +13,7 @@ const { data }: any = await useFetch('/api/sanity?schema=projects&pure=true');
         </div>
         <div class="mt-10 grid gap-8 grid-cols-1 md:grid-cols-2">
             <div class="project__card" v-for="project in data" v-motion-slide-visible-once-left>
-                <a target="_blank" class="transition-all" :href="project.url">
+                <a target="_blank" class="transition-all" :href="project.url" data-no-blobity>
                     <div class="inline-block max-w-full overflow-hidden relative box margin-0">
                         <div class="box-border block max-w-full">
                             <img :src="project.image" alt="Project Image" class="project__card_img" />
