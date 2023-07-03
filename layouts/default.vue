@@ -3,11 +3,13 @@ import useBlobity from 'blobity/lib/vue/useBlobity';
 
 _initHead();
 
-useBlobity({
-    invert: true,
-    dotColor: '#3CCF91',
-    font: 'Lexend',
-    fontSize: 13,
+onMounted(() => {
+    useBlobity({
+        invert: true,
+        dotColor: '#3CCF91',
+        font: 'Lexend',
+        fontSize: 13,
+    });
 });
 </script>
 
