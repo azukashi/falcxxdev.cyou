@@ -1,16 +1,6 @@
 <script setup lang="ts">
-import useBlobity from 'blobity/lib/vue/useBlobity';
-
 _initHead();
-
-onMounted(() => {
-    useBlobity({
-        invert: true,
-        dotColor: '#3CCF91',
-        font: 'Lexend',
-        fontSize: 13,
-    });
-});
+blobity();
 </script>
 
 <template>
