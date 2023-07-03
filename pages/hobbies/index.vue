@@ -18,7 +18,7 @@ const { data }: any = await useFetch('/api/sanity?schema=albums&pure=true');
         </div>
         <div class="mt-10 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div class="hobbies__card cursor-zoom-in" v-for="album in data" v-motion-slide-visible-once-left>
-                <NuxtLink class="cursor-zoom-in" :to="`hobbies/${album.name.toString().toLowerCase()}`">
+                <NuxtLink class="cursor-zoom-in" :to="`hobbies/${album.name.toString().toLowerCase()}`" data-no-blobity>
                     <nuxt-img
                         format="webp"
                         width="1920"
