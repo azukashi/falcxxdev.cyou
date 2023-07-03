@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const { name }: any = useRoute().params;
 const { data }: any = await useFetch(`/api/sanity?schema=alb_${name}&pure=true`);
-console.log(data);
 
 const capitalize = <T extends string>(str: T) => (str[0].toUpperCase() + str.slice(1)) as Capitalize<typeof str>;
 // let view = ref(false);
@@ -45,7 +44,7 @@ const capitalize = <T extends string>(str: T) => (str[0].toUpperCase() + str.sli
         </div>
         <div v-if="data[0]" class="mt-10 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div class="hobbies__card cursor-zoom-in" v-for="picture in data" v-motion-slide-visible-once-left>
-                <NuxtLink target="_blank" class="cursor-zoom-in" :to="urlFor(picture.image).url()">
+                <NuxtLink target="_blank" class="cursor-zoom-in" :to="urlFor(picture.image).url()" data-no-blobity>
                     <nuxt-img
                         format="webp"
                         width="1920"
@@ -58,6 +57,25 @@ const capitalize = <T extends string>(str: T) => (str[0].toUpperCase() + str.sli
                         alt="Picture"
                         loading="lazy"
                     />
+                    <div class="ps-4 pe-4 py-2 h-full w-full z-30 relative">
+                        <p v-if="picture.attribution" class="text-base text-white">
+                            Object in this picture:
+                            <NuxtLink
+                                class="text-[#3CCF91] font-bold underline"
+                                target="_blank"
+                                :to="picture.attribution.url"
+                                >{{ picture.attribution.username }}</NuxtLink
+                            >
+                        </p>
+                        <p
+                            v-if="!picture.attribution"
+                            class="text-base text-white inline-block"
+                            data-blobity-tooltip="If there's yourself there, contact me on Instagram to get recognized."
+                        >
+                            No object or possibly unknown.
+                            <span><Icon name="material-symbols:help-outline" class="text-white" /></span>
+                        </p>
+                    </div>
                 </NuxtLink>
             </div>
         </div>
