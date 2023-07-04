@@ -15,8 +15,6 @@
                         src="/img/webicon.webp"
                         alt="Logo"
                         class="h-[2.8rem] w-auto"
-                        width="0"
-                        height="0"
                     />
                 </NuxtLink>
                 <div class="transition-all">
