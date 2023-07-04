@@ -15,9 +15,8 @@ $ pnpm install
 
 ### 📝 Edit [Sanity](https://sanity.io) Project ID to yours
 
-`nuxt.config.ts`
-
 ```ts
+// nuxt.config.ts
 export default defineNuxtConfig({
     // ...
     image: {
