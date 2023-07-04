@@ -15,7 +15,7 @@ const { data }: any = await useFetch('/api/sanity?schema=about');
                     {{ tl.title }}
                     <span
                         class="text-sm font-semibold mr-2 px-2.5 py-0.5 rounded bg-white bg-opacity-[0.16] text-[#3CCF91] ml-3"
-                        v-if="tl.latest"
+                        v-if="tl.isLatest"
                         >Latest</span
                     >
                 </h3>
