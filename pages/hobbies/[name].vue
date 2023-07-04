@@ -70,7 +70,7 @@ const capitalize = <T extends string>(str: T) => (str[0].toUpperCase() + str.sli
                         <p
                             v-if="!picture.attribution"
                             class="text-base text-white inline-block"
-                            data-blobity-tooltip="If there's yourself there, contact me on Instagram to get recognized."
+                            data-blobity-tooltip="If you're there, hit me up on Instagram to get recognized."
                         >
                             No object or possibly unknown.
                             <span><Icon name="material-symbols:help-outline" class="text-white" /></span>
