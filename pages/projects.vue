@@ -16,7 +16,13 @@ const { data }: any = await useFetch('/api/sanity?schema=projects&pure=true');
                 <a target="_blank" class="transition-all" :href="project.url" data-no-blobity>
                     <div class="inline-block max-w-full overflow-hidden relative box margin-0">
                         <div class="box-border block max-w-full">
-                            <img :src="project.image" alt="Project Image" class="project__card_img" />
+                            <nuxt-img
+                                format="webp"
+                                quality="70"
+                                :src="project.image"
+                                alt="Project Image"
+                                class="project__card_img"
+                            />
                         </div>
                     </div>
                     <div class="flex flex-col ps-4 pe-4 py-2">

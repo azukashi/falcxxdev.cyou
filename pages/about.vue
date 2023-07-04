@@ -5,12 +5,19 @@ const { data }: any = await useFetch('/api/sanity?schema=about');
 <template>
     <div class="my-[14vh] lg:mt-[20vh]">
         <div class="flex items-center content-center justify-center">
-            <img
+            <nuxt-img
                 class="w-[100px] invert-[0.1] absolute top-28 translate-x-20 z-[3]"
                 src="https://svgsilh.com/svg/26432.svg"
                 alt="Dots"
             />
-            <img class="w-56 rounded-full" :src="data.picture" :alt="data.name" v-motion-slide-visible-once-top />
+            <nuxt-img
+                class="w-56 rounded-full"
+                format="webp"
+                quality="70"
+                :src="data.picture"
+                :alt="data.name"
+                v-motion-slide-visible-once-top
+            />
         </div>
         <div class="my-4">
             <p class="text-base text-[#8F9094]" v-motion-slide-visible-once-left>

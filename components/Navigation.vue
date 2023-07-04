@@ -8,7 +8,16 @@
                 v-motion-slide-top
             >
                 <NuxtLink to="/" class="navbar__link" aria-label="Falcxxdev">
-                    <img src="/img/webicon.webp" alt="Logo" class="h-[2.8rem] w-auto" width="0" height="0" />
+                    <nuxt-img
+                        format="webp"
+                        quality="70"
+                        preload
+                        src="/img/webicon.webp"
+                        alt="Logo"
+                        class="h-[2.8rem] w-auto"
+                        width="0"
+                        height="0"
+                    />
                 </NuxtLink>
                 <div class="transition-all">
                     <NuxtLink to="/" class="navbar__lnk" aria-label="Home page"
