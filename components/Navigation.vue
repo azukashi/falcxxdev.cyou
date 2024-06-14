@@ -26,10 +26,6 @@
                         ><span class="md:hidden"><Icon name="material-symbols:work" /></span>
                         <span class="hidden md:block">Projects</span></NuxtLink
                     >
-                    <NuxtLink to="/hobbies" class="navbar__lnk" aria-label="Hobbies page"
-                        ><span class="md:hidden"><Icon name="ion:camera-sharp" /></span>
-                        <span class="hidden md:block">Hobbies</span></NuxtLink
-                    >
                     <NuxtLink to="/about" class="navbar__lnk" aria-label="About page"
                         ><span class="md:hidden"><Icon name="mdi:account-circle" /></span>
                         <span class="hidden md:block">About</span></NuxtLink
