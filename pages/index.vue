@@ -21,7 +21,8 @@ const { data }: any = await useFetch('/api/sanity?schema=home');
             <p class="text-lg lg:text-xl text-[#8F9094]" v-motion-slide-visible-left>
                 🚀 Exploring opportunities and side projects.
                 <br />
-                💻 Currently specializing in <span class="text-[#3CCF91] font-semibold">Front-end Development</span>.
+                💻 Currently specializing in
+                <span class="text-[#3CCF91] font-semibold">Full-stack Web Development</span>.
             </p>
         </div>
         <div class="mt-10">
