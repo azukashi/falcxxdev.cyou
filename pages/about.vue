@@ -38,8 +38,7 @@ const { data }: any = await useFetch('/api/sanity?schema=about');
                 <br />
                 When I'm not doing anything with programming, I play
                 <span v-for="thing in data.when_free" class="text-[#3CCF91] font-semibold">{{ thing }}, </span> doing
-                voice communication with friends on <span class="text-[#3CCF91] font-semibold">Discord</span>, went
-                outside to shoot some pictures using my camera, etc.
+                voice thing with friends on <span class="text-[#3CCF91] font-semibold">Discord</span>, and others more.
             </p>
         </div>
         <div class="my-4" v-motion-slide-visible-once-bottom>
@@ -53,7 +52,7 @@ const { data }: any = await useFetch('/api/sanity?schema=about');
             <div class="mt-10" v-motion-slide-visible-once-bottom>
                 <p class="text-base text-center text-[#8F9094]">
                     I'm currently specializing in
-                    <span class="text-[#3CCF91] font-semibold">Front-end Development</span>.
+                    <span class="text-[#3CCF91] font-semibold">Full-stack Web Development</span>.
                     <br />
                     Feel free to get in touch and talk more about your projects.
                     <br />
